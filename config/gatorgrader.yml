@@ -1,0 +1,22 @@
+---
+name: practical-04
+break: true
+indent: 4
+---
+
+src/main/java/practicalfour:
+    CupcakeSale.java:
+        ConfirmFileExists
+        CountSingleLineComments --language Java --count 4
+        MatchFileFragment --fragment "TODO" --count 0 --exact
+        MatchFileFragment --fragment "{YOUR NAME HERE}" --count 0 --exact
+        MatchFileFragment --fragment "(int)" --count 1
+        MatchFileFragment --fragment ".length()" --count 3 --exact
+        
+ExecuteCommand --command "gradle build"
+CountCommandOutput --command "gradle -q --console plain run" --count 6 --exact
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "8%" --count 1 --exact
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "16.2" --count 1 --exact
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "7" --count 1 --exact
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "5" --count 1 --exact
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "3" --count 1 --exact
