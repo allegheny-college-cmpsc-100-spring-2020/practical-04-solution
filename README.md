@@ -81,6 +81,7 @@ For the purposes of this assignment, the features of our revised program are:
   * Identifiers to hold each cupcake's count
   * Identifiers to store the calculated total(s)
   * An adequate number of single-line comments (at least `4`) which label our code
+  * _At least one_ instance of casting (can be either an `int` or `double` casting)
 - [ ] Output which matches the sample below
 - [ ] Code which passes `gradle build` and `gradle -q --console plain run`
     * This ensures both _legible_ and _runnable_ code
@@ -130,7 +131,7 @@ You will use this command to grade your work before you turn it in, enabling you
 #### Running GatorGrader directly on `container` start
 
 - [ ] `cd` to your `CMPSC100` folder
-- [ ] Locate the `cmpsc-100-spring-2020-practical-02` folder and `cd` to it.
+- [ ] Locate the `cmpsc-100-spring-2020-practical-04` folder and `cd` to it.
     * Remember that if you run `ls -la`, you should see a `.git` folder if you're in the main repository folder.
 - [ ] To make sure you're in the right repository, type `pwd` and press `Enter`
     * If you recieve the expected path, you're in the right place!
@@ -154,7 +155,7 @@ docker run -it --mount type=bind,source="$(pwd)",target="/project" --hostname Ga
 The GitHub platform is a place to store your work. So, it makes some sense that should be able to _clone_ (download) from it, and push back (upload) to it. Here, we'll learn this second part.
 
 - [ ] `cd` to your `CMPSC100` folder
-- [ ] Locate the `cmpsc-100-spring-2020-practical-03` folder and `cd` to it
+- [ ] Locate the `cmpsc-100-spring-2020-practical-04` folder and `cd` to it
 
 Once in this folder, we need to tell git that there have been changes.
 

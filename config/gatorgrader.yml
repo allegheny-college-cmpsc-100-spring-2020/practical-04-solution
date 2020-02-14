@@ -10,8 +10,8 @@ src/main/java/practicalfour:
         CountSingleLineComments --language Java --count 4
         MatchFileFragment --fragment "TODO" --count 0 --exact
         MatchFileFragment --fragment "{YOUR NAME HERE}" --count 0 --exact
-        MatchFileFragment --fragment "(int)" --count 1
         MatchFileFragment --fragment ".length()" --count 3 --exact
+        MatchFileRegex --regex "(\(double\)|\(int\))" --count 1
         
 ExecuteCommand --command "gradle build"
 CountCommandOutput --command "gradle -q --console plain run" --count 6 --exact

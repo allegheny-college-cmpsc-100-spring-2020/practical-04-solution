@@ -19,7 +19,7 @@ public class CupcakeSale {
     File file = null;
     Scanner input = null;
     try {
-      file = new File("../../../../input/cupcakes.nomnomnom");
+      file = new File("input/cupcakes.nomnomnom");
       input = new Scanner(file);
     } catch (FileNotFoundException noFile) {
       System.exit(0);
